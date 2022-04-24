@@ -1,6 +1,6 @@
 [![pub package](https://img.shields.io/badge/pub-v0.0.1-blue)](https://github.com/yasfdany/flutter_3d_drawer)
 
-a Simple 3d Drawer from [video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=1157s) from Flutter Europe
+a Simple 3d Drawer implementation from [Flutter Europe Video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=1157s)
 
 ## Features
 
