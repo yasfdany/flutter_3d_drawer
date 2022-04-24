@@ -1,7 +1,7 @@
 name: flutter_3d_drawer
 description: a Simple 3d Drawer
 version: 0.0.1
-homepage:
+homepage: https://github.com/yasfdany/flutter_3d_drawer
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
