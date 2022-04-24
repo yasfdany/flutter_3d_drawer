@@ -1,3 +1,5 @@
+[![pub package](https://img.shields.io/badge/pub-v0.0.1-blue)](https://github.com/yasfdany/flutter_3d_drawer)
+
 a Simple 3d Drawer from [video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=1157s) from Flutter Europe
 
 ## Features
@@ -9,7 +11,7 @@ a Simple 3d Drawer from [video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=11
 ## Demo Video
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/yasfdany/analog_clock_picker/master/doc/gif/demo.gif" width="200px">
+  <img src="https://raw.githubusercontent.com/yasfdany/flutter_3d_drawer/master/doc/gif/demo.gif" width="200px">
 </p>
 
 ## Getting started
@@ -23,46 +25,32 @@ dependencies:
 
 ## How to use
 
-Create controller for control the value of the clock
+Create controller for control the drawer
 
 ```dart
-AnalogClockController analogClockController = AnalogClockController();
+DrawerControl drawerControl = DrawerControl();
 ```
 
-You can provide default value inside the controller
+Control the drawer
 
 ```dart
-AnalogClockController analogClockController = AnalogClockController(
-  value: DateTime.now(),
-  periodType: PeriodType.am,
-  onPeriodTypeChange: (date, period) {
-    //TODO : Do Something
-  },
-);
-```
+//Open drawer from controller
+drawerControl.open();
 
-you can set period change listener after initialize it
+//Close drawer from controller
+drawerControl.close();
 
-```dart
-analogClockController.setOnPeriodTypeChangeListener((date, period) {
-      //TODO : Do Something
-});
+//Toggle drawer from controller
+drawerControl.toggle();
 ```
 
 Minimal usage
 
 ```dart
-AnalogClockPicker(
-  controller: analogClockController,
-  size: MediaQuery.of(context).size.width * 0.74,
-  secondHandleColor: Colors.red,
-  minutesHandleColor: Colors.black,
-  hourHandleColor: Colors.black,
-  clockBackground: Image.asset(
-    AssetImages.clockBackground,
-  ),
-  onClockChange: (date){
-    //TODO : Do Something
-  },
-)
+Flutter3dDrawer(
+  controller: drawerControl,
+  maxSlide: MediaQuery.of(context).size.width * 0.5,
+  body: MyHome(),
+  drawer: MyDrawer(),
+);
 ```
