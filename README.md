@@ -1,4 +1,4 @@
-Simple 3d Drawer from a [video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=1157s) from Flutter Europe
+a Simple 3d Drawer from [video](https://www.youtube.com/watch?v=FCyoHclCqc8&t=1157s) from Flutter Europe
 
 ## Features
 
@@ -18,7 +18,7 @@ Add package to `pubspec.yaml`
 
 ```yaml
 dependencies:
-    analog_clock_picker: 0.0.6
+    flutter_3d_drawer: 0.0.1
 ```
 
 ## How to use
